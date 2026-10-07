@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+nav {
+    background: #1e293b;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+section {
+    min-height: 70vh;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#home {
+    background: #dbeafe;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 42px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#skills {
+    background: white;
+}
+
+#projects {
+    background: #eef2ff;
+}
+
+#contact {
+    background: white;
+}
+#projects div {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+#contact form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#contact textarea {
+    height: 120px;
+    resize: none;
+}
+.dark-mode {
+    background: #111827;
+    color: white;
+}
+
+.dark-mode section {
+    background: #111827;
+    color: white;
+}
+
+.dark-mode #home,
+.dark-mode #projects {
+    background: #1f2937;
+}
+
+.dark-mode #projects div {
+    background: #374151;
+}
+
+.dark-mode #contact input,
+.dark-mode #contact textarea {
+    background: #374151;
+    color: white;
+    border-color: #6b7280;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    #projects div {
+        width: 90%;
+    }
+
+    #contact form {
+        width: 90%;
+    }
+}
